@@ -1,4 +1,4 @@
-# Google Summer of Code 2018 - Final Report
+## Google Summer of Code 2018 - Final Report
 
 # Emotion Recognition Component for Learnbot
 
@@ -6,15 +6,20 @@ Learnbot is an educational robot used to develop computational thinking in kids 
 
 ## Application Period
 
-I was extremely interested in this particular project as computer vision and robotics have always fascinated me. I contacted the mentors and discussed my ideas regarding the project. My interaction was mainly with [Pillar Bachiller](https://github.com/pilarbachiller), who guided me throughout the entire journey. She cleared all my doubts and gave feedback on my ideas during this period. I built a small prototype for the project, which recognized 3 emotions: Happy, Sad, Neutral. I then wrote a detailed project proposal, keeping in mind the suggestions provided by my mentor.
+I was extremely interested in this particular project as computer vision and robotics have always fascinated me. I contacted the mentors and discussed my ideas regarding the project. My interaction was mainly with [Pillar Bachiller](https://github.com/pilarbachiller), who guided me throughout the entire journey. She cleared all my doubts and gave me feedback on my ideas during this period.
+
+The 3 important things that I did during the application period, that led to my selection were:
+1. Good communication with the mentor, which helped me understand the objectives and scope of the project.
+2. I created a small version of the original project. This version was able to recognize 3 basic emotions: Happy, Sad, Neutral.
+3. I wrote a detailed project proposal, keeping in mind the suggestions provided by my mentor.
 
 ## Community Bonding Period
 
 My excitement knew no bounds when the results were out and my proposal had been accepted for GSoC. The first thing I did was sending an email to my mentor and thanking her for the opportunity.
 
-We discussed the action plan, mode of communication and frequency of our communication, right at the start of the community bonding period. We also decided that I would be writing blog posts to keep track of my work during GSoC.
+We discussed the action plan, mode of communication and frequency of our communication, right at the start of the community bonding period. We also decided a way to keep track of my work during GSoC: by writing blog posts.
 
-I made myself familiar with the code base and learnt how to create a basic RoboComp component. I created an initial version of the component which recognizes 3 emotion, by integrating the code of my prototype into the newly created RoboComp component.
+During this period, I made myself familiar with the code base and learnt how to create a basic RoboComp component. I created an initial version of the component which recognizes 3 emotion, by integrating the code of my prototype into the newly created RoboComp component.
 
 ## Coding Period
 
@@ -29,17 +34,17 @@ Later on, I changed the plan and decided to focus on facial expression data only
 
 The CNN model turned out to be the best, with least computational costs among the three.
 
-I trained these models on multiple different facial expression data sets and compared the results. The data sets which I experimented with were: [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data), [CK+](http://www.pitt.edu/~emotion/ck-spread.htm), [JAFFE](http://www.kasrl.org/jaffe.html), [KDEF](http://www.emotionlab.se/kdef/) and [AffectNet](http://mohammadmahoor.com/affectnet/). The model trained using AffectNet was finally included in the final component.
+I trained these models on multiple different facial expression data sets and compared the results. The data sets which I experimented with were: [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data), [CK+](http://www.pitt.edu/~emotion/ck-spread.htm), [JAFFE](http://www.kasrl.org/jaffe.html), [KDEF](http://www.emotionlab.se/kdef/) and [AffectNet](http://mohammadmahoor.com/affectnet/). The model trained using AffectNet was included in the final component.
 
 Aligning faces using facial landmarks and adaptive histogram equalization was added to the component, in order to make recognition more stable and robust.
 
 **Features of the final emotion recognition component:**
 
-1. Recognizes 5 emotions: Happiness, sadness, anger, surprise, neutral.
-2. Faces are aligned vertically before emotion detection.
+1. Ability to recognize 5 emotion types: happiness, sadness, anger, surprise, neutral.
+2. Vertical face alignment using facial landmarks.
 3. Adaptive histogram equalization to handle uneven illumination conditions.
-4. Uses a deep learning based face detector and a haar-cascade based face detector.
-5. It can recognize emotions for multiple faces in a single frame.
+4. Deep learning based face detector and a haar-cascade based face detector.
+5. Ability to recognize emotions for multiple faces in a single frame.
 
 ## Future Work
 
@@ -49,7 +54,7 @@ Aligning faces using facial landmarks and adaptive histogram equalization was ad
 
 ## Posts
 
-For a more detailed view on my work during GSoC, have a look at my blog posts:
+For a more detailed view on my work during GSoC, you can have a look at my blog posts:
 1. [Hello, World!](https://robocomp.github.io/web/gsoc/2018/sayali_deshpande/post1)
 2. [Happy? Sad? Neutral?](https://robocomp.github.io/web/gsoc/2018/sayali_deshpande/post2)
 3. [The CNN-DSIFT Model](https://robocomp.github.io/web/gsoc/2018/sayali_deshpande/post3)
@@ -59,12 +64,15 @@ For a more detailed view on my work during GSoC, have a look at my blog posts:
 ## Source Code
 
 Commits: [link](https://github.com/robocomp/robocomp-robolab/commits/master?author=psy2d)
+
 Final Emotion Recogntion Component: [link](https://github.com/robocomp/robocomp-robolab/tree/master/components/emotionrecognition2)
+
 Emotion Recognition Client Component: [link](https://github.com/robocomp/robocomp-robolab/tree/master/components/emotionrecognitionclient)
+
 RoboComp-RoboLab: [link](https://github.com/robocomp/robocomp-robolab)
 
 
-I would like to thank Google and RoboComp for giving me this wonderful opportunity. I am grateful to my mentor for helping me out at every hurdle and providing me valuable inputs at every step.
+Finally, I would like to thank Google and RoboComp for giving me this wonderful opportunity. I am grateful to my mentor for helping me out at every hurdle and providing me valuable inputs at every step.
 
 ## References
 
