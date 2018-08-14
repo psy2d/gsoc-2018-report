@@ -6,20 +6,20 @@ Learnbot is an educational robot used to develop computational thinking in kids 
 
 ## Application Period
 
-I was extremely interested in this particular project as computer vision and robotics have always fascinated me. I contacted the mentors and discussed my ideas regarding the project. My interaction was mainly with [Pillar Bachiller](https://github.com/pilarbachiller), who guided me throughout the entire journey. She cleared all my doubts and gave me feedback on my ideas during this period.
+I was extremely interested in this particular project as computer vision and robotics have always fascinated me. I contacted the mentors and discussed my ideas regarding the project. My interaction was mainly with [Pilar Bachiller](https://github.com/pilarbachiller), who guided me throughout the entire journey. She cleared all my doubts and gave me feedback on my ideas during this period.
 
 The 3 important things that I did during the application period, that led to my selection were:
 1. Good communication with the mentor, which helped me understand the objectives and scope of the project.
-2. I created a small version of the original project. This version was able to recognize 3 basic emotions: Happy, Sad, Neutral.
+2. I created a small version of the original project. This version was able to recognize 3 basic emotions: happiness, sadness, neutral.
 3. I wrote a detailed project proposal, keeping in mind the suggestions provided by my mentor.
 
 ## Community Bonding Period
 
-My excitement knew no bounds when the results were out and my proposal had been accepted for GSoC. The first thing I did was sending an email to my mentor and thanking her for the opportunity.
+My excitement knew no bounds when the results were out and my proposal had been accepted for GSoC. The first thing I did was, I sent an email to my mentor and thanked her for the opportunity.
 
 We discussed the action plan, mode of communication and frequency of our communication, right at the start of the community bonding period. We also decided a way to keep track of my work during GSoC: by writing blog posts.
 
-During this period, I made myself familiar with the code base and learnt how to create a basic RoboComp component. I created an initial version of the component which recognizes 3 emotion, by integrating the code of my prototype into the newly created RoboComp component.
+During this period, I made myself familiar with the code base and learnt how to create a basic RoboComp component. I also created an initial version of the component which recognized 3 emotion types. I did this by integrating my previously written code into the newly created RoboComp component.
 
 ## Coding Period
 
@@ -36,7 +36,7 @@ The CNN model turned out to be the best, with least computational costs among th
 
 I trained these models on multiple different facial expression data sets and compared the results. The data sets which I experimented with were: [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data), [CK+](http://www.pitt.edu/~emotion/ck-spread.htm), [JAFFE](http://www.kasrl.org/jaffe.html), [KDEF](http://www.emotionlab.se/kdef/) and [AffectNet](http://mohammadmahoor.com/affectnet/). The model trained using AffectNet was included in the final component.
 
-Aligning faces using facial landmarks and adaptive histogram equalization was added to the component, in order to make recognition more stable and robust.
+The trained model could recognize the emotions quite well, but there were a few problems: incorrect recognition when faces were tilted and in uneven lighting conditions. In order to overcome these issues, I added face alignment using facial landmarks and adaptive histogram equalization.
 
 **Features of the final emotion recognition component:**
 
@@ -48,8 +48,8 @@ Aligning faces using facial landmarks and adaptive histogram equalization was ad
 
 ## Future Work
 
-1. Extending the project to recognize more number of emotions.
-2. Using the detected emotions to provide feedback in form of dialogue or by showing an emotion on learnbot's display.
+1. Extending the project to recognize a wider range of emotions.
+2. Using the detected emotions to provide feedback in the form of dialogue or by showing an emotion on learnbot's display.
 3. Analysing multimodal data for emotion recognition.
 
 ## Posts
@@ -63,14 +63,10 @@ For a more detailed view on my work during GSoC, you can have a look at my blog 
 
 ## Source Code
 
-Commits: [link](https://github.com/robocomp/robocomp-robolab/commits/master?author=psy2d)
-
-Final Emotion Recogntion Component: [link](https://github.com/robocomp/robocomp-robolab/tree/master/components/emotionrecognition2)
-
-Emotion Recognition Client Component: [link](https://github.com/robocomp/robocomp-robolab/tree/master/components/emotionrecognitionclient)
-
-RoboComp-RoboLab: [link](https://github.com/robocomp/robocomp-robolab)
-
+- Commits: [link](https://github.com/robocomp/robocomp-robolab/commits/master?author=psy2d)
+- Final emotion recogntion component: [link](https://github.com/robocomp/robocomp-robolab/tree/master/components/emotionrecognition2)
+- Emotion recognition client component: [link](https://github.com/robocomp/robocomp-robolab/tree/master/components/emotionrecognitionclient)
+- RoboComp-RoboLab: [link](https://github.com/robocomp/robocomp-robolab)
 
 Finally, I would like to thank Google and RoboComp for giving me this wonderful opportunity. I am grateful to my mentor for helping me out at every hurdle and providing me valuable inputs at every step.
 
